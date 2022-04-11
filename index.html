@@ -4,63 +4,230 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-
     <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Frontend Mentor | Manage landing page</title>
   </head>
   <body>
-    <!-- Rating state start -->
-    <div class="container-1">
-      <div class="card-container-1">
-        <img src="images/icon-star.svg" alt="" />
-        <h1>How did we do?</h1>
-        <p>
-          Please let us know how we did with your support<br />
-          request. All feedback is appreciated to help us<br />
-          improve our offering!
-        </p>
-        <div class="ratings">
-          <div class="rating">1</div>
-          <div class="rating">2</div>
-          <div class="rating">3</div>
-          <div class="rating">4</div>
-          <div class="rating">5</div>
+    <header class="main-header">
+      <div class="navbar">
+        <img src="images/logo.svg" alt="" />
+        <nav>
+          <ul class="nav-links">
+            <li><a href="">Pricing</a></li>
+            <li><a href="">Product</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Community</a></li>
+          </ul>
+        </nav>
+        <button class="btn">Get Started</button>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <button class="btn">Submit</button>
       </div>
-    </div>
-    <!-- Rating state end -->
 
-    <!-- Thank you state start -->
+      <div class="container">
+        <div class="hero">
+          <div class="hero-text">
+            <h1>Bring everyone together to build better products.</h1>
+            <p>
+              Manage makes it simple for software teams to plan day-to-day tasks
+              while keeping the larger team goals in view.
+            </p>
+            <button class="btn">Get Started</button>
+          </div>
 
-    <div class="container-2 hidden">
-      <div class="card-container-2">
-        <img src="images/illustration-thank-you.svg" alt=""/>
-        <div class="selection">
-
+          <div class="hero-illustration">
+            <img src="images/illustration-intro.svg" alt="" />
+          </div>
         </div>
-        <h1>Thank You!</h1>
-        <p>
-          We appreciate you taking the time to give a rating.<br> If you ever need
-          more support, don’t hesitate to <br> get in touch!
-        </p>
       </div>
-    </div>
+    </header>
 
-    <!-- Thank you state end -->
+    <section class="info">
+      <div class="container grid">
+        <div class="left-info" data-aos="zoom-in-up">
+          <h1>What’s different about Manage?</h1>
+          <p>
+            Manage provides all the functionality your team needs, without the
+            complexity. Our software is tailor-made for modern digital product
+            teams.
+          </p>
+        </div>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">dev.Emmah</a>.
-    </div>
-    <script src="main.js"></script>
+        <div class="right-info">
+          <div class="info-text" data-aos="zoom-in-up">
+            <div class="text">
+              <h4>01</h4>
+              <h1>Track company-wide progress</h1>
+            </div>
+
+            <p>
+              See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.
+            </p>
+          </div>
+          <div class="info-text" data-aos="zoom-in-up">
+            <div class="text">
+              <h4>02</h4>
+              <h1>Advanced built-in reports</h1>
+            </div>
+
+            <p>
+              Set internal delivery estimates and track progress toward company
+              goals. Our customisable dashboard helps you build out the reports
+              you need to keep key stakeholders informed.
+            </p>
+          </div>
+          <div class="info-text" data-aos="zoom-in-up">
+            <div class="text">
+              <h4>03</h4>
+              <h1>Everything you need in one place</h1>
+            </div>
+
+            <p>
+              Stop jumping from one service to another to communicate, store
+              files, track tasks and share documents. Manage offers an
+              all-in-one team productivity solution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <h1 class="testimonial-header" data-aos="zoom-in-up">
+        What they’ve said
+      </h1>
+      <!-- Slider main container -->
+      <div class="swiper" data-aos="zoom-in-up">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="images/avatar-anisha.png" alt="" />
+            <h1>Anisha Li</h1>
+            <p>
+              “Manage has supercharged our team’s workflow. The ability to
+              maintain visibility on larger milestones at all times keeps
+              everyone motivated.”
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/avatar-ali.png" alt="" />
+            <h1>Ali Bravo</h1>
+            <p>
+              “We have been able to cancel so many other subscriptions since
+              using Manage. There is no more cross-channel confusion and
+              everyone is much more focused.”
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/avatar-richard.png" alt="" />
+            <h1>Richard Watts</h1>
+            <p>
+              “Manage allows us to provide structure and process. It keeps us
+              organized and focused. I can’t stop recommending them to everyone
+              I talk to!”
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <img src="images/avatar-shanai.png" alt="" />
+            <h1>Shanai Gough</h1>
+            <p>
+              “Their software allows us to track, manage and collaborate on our
+              projects from anywhere. It keeps the whole team in-sync without
+              being intrusive.”
+            </p>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div class="testimonial-btn">
+        <button class="btn" data-aos="zoom-in-up">Get Started</button>
+      </div>
+    </section>
+
+    <section class="cta" data-aos="zoom-in-up">
+      <div class="container grid">
+        <h1>Simplify how your team works today.</h1>
+        <button class="btn">Get Started</button>
+      </div>
+    </section>
+
+    <footer data-aos="zoom-in-up">
+      <div class="container grid">
+        <div class="grid-1">
+          <div class="icon">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <div class="socials">
+            <img src="images/icon-facebook.svg" alt="" />
+            <img src="images/icon-youtube.svg" alt="" />
+            <img src="images/icon-twitter.svg" alt="" />
+            <img src="images/icon-pinterest.svg" alt="" />
+            <img src="images/icon-instagram.svg" alt="" />
+          </div>
+        </div>
+        <div class="navs">
+          <div class="grid-2">
+            <nav>
+              <ul class="nav-links2">
+                <li><a href="">Home</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="grid-3">
+            <nav>
+              <ul class="nav-links2">
+                <li><a href="">Careers</a></li>
+                <li><a href="">Community</a></li>
+                <li><a href="">Privacy Policy</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+
+        <div class="grid-4">
+          <div class="mail">
+            <input
+              type="email"
+              name="text"
+              id="text-field"
+              placeholder="Updates in your inbox…"
+            />
+            <button class="btn">Go</button>
+            <p class="invalid"></p>
+          </div>
+          <div class="copyright">
+            <h1>Copyright 2020. All Rights Reserved</h1>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 100,
+        delay: 0,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
