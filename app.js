@@ -19,11 +19,9 @@ btn.addEventListener("click", () => {
     invalid.textContent = "";
     inputField.className = "valid_Email";
     inputField.value = "";
-    return true;
   } else {
     inputField.className = "invalid_Email";
     invalid.textContent = "please insert a valid email";
-    return false;
   }
 });
 
